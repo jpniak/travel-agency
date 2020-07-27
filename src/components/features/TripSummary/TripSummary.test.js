@@ -6,7 +6,7 @@ describe('Component TripSummary', () => {
   it('should render without crashing', () => {
     const component = shallow(<TripSummary id='abc' image='image.jpg' name='name' cost='cost' days={1} tags={['test', 'test']} />);
     expect(component).toBeTruthy();
-    console.log(component.debug());
+    //console.log(component.debug());
   });
 
   it('should throw error without required props', () => {
@@ -30,7 +30,7 @@ describe('Component TripSummary', () => {
 
     expect(component.find('img').prop('src')).toEqual(expectedSrc);
     expect(component.find('img').prop('alt')).toEqual(expectedAlt);
-    console.log('Src i alt OK: ', component.debug());
+    //console.log('Src i alt OK: ', component.debug());
   });
 
   {/* Czy renderowane są propsy name, cost i days */}
@@ -49,7 +49,7 @@ describe('Component TripSummary', () => {
     expect(renderedCost).toEqual(`from ${expectedCost}`);   
     expect(renderedDays).toEqual(`${expactedDays} days`);   
 
-    console.log('Propsy OK: ', component.debug());
+    //console.log('Propsy OK: ', component.debug());
   });
 
   {/* Czy są renderowane tagi w spanach? */}
@@ -62,7 +62,7 @@ describe('Component TripSummary', () => {
       const renderedTag = component.find('.tag').at(tag).text();
       expect(renderedTag).toEqual(expectedTags[tag]);
     }
-    console.log('Są tagi - OK: ', component.debug());
+    //console.log('Są tagi - OK: ', component.debug());
   });
   
   {/* Czy nie ma tagów? */}
@@ -71,6 +71,6 @@ describe('Component TripSummary', () => {
     const component = shallow(<TripSummary id='test' image='image' name='name' cost='{expectedCost}' days={1} tags={[]} />);
     const checkedDiv = component.find('.tags').exists();
     expect(checkedDiv).toEqual(true);
-    console.log('Brak tagów - ERROR: ', component.debug());
+    //console.log('Brak tagów - ERROR: ', component.debug());
   }); 
 });
