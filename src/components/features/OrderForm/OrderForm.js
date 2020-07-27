@@ -4,9 +4,9 @@ import OrderSummary from '../OrderSummary/OrderSummary';
 import OrderOption from '../OrderOption/OrderOption';
 import pricing from '../../../data/pricing.json';
 import Button from '../../../components/common/Button/Button.js';
-import settings from '../../../data/settings.json';
-import formatPrice from '../../../utils/formatPrice.json';
-import calculateTotal from '../../../utils/calculateTotal.json';
+import settings from '../../../data/settings.js';
+import {formatPrice} from '../../../utils/formatPrice.js';
+import {calculateTotal} from '../../../utils/calculateTotal.js';
 
 
 
