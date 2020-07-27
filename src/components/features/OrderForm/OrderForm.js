@@ -14,6 +14,17 @@ import { Row, Col } from 'react-flexbox-grid';
 
 const sendOrder = (options, tripCost, setOrderOption, tripName, tripId, tripCode) => {
   const totalCost = formatPrice(calculateTotal(tripCost, options));
+  
+  const {contact, name} = options;
+
+  if ( name.length < 3 ) {
+    window.alert('Fill in correct name, please');
+    return;
+  }
+  if ( contact.length < 7 ) {
+    window.alert('Fill in correct contact data, please');
+    return;
+  }
 
   const payload = {
     ...options,
