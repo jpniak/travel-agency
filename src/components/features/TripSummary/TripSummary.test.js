@@ -65,12 +65,12 @@ describe('Component TripSummary', () => {
     console.log('Są tagi - OK: ', component.debug());
   });
   
-  {/* Czy nie ma tagów?  // jeśli są to trzeba je usunąć w TripSummary i dopiero wtedy odkomentować poniższy test */}
-  {/*
+  {/* Czy nie ma tagów? */}
+  
   it('should throw error when no tags', () => {
     const component = shallow(<TripSummary id='test' image='image' name='name' cost='{expectedCost}' days={1} tags={[]} />);
     const checkedDiv = component.find('.tags').exists();
-    expect(checkedDiv).toEqual(false);
+    expect(checkedDiv).toEqual(true);
     console.log('Brak tagów - ERROR: ', component.debug());
-  }); */}
+  }); 
 });
