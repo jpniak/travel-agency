@@ -50,7 +50,7 @@ describe('Component OrderOption', () => {
     dropdown: {},
     icons: {},
     checkboxes: { currentValue: [mockProps.currentValue] },
-    number: { currentValue: '1' },
+    number: { currentValue: 1 },
     text: {},
     date: {},
   };
