@@ -11,6 +11,64 @@
       "start-date": "",
       "totalCost": "$51,381",
       "id": 1
+    },
+    {
+      "car-rental": "",
+      "accommodation": "hotel",
+      "features": [
+        "security"
+      ],
+      "adults": 1,
+      "children": 0,
+      "name": "",
+      "contact": "",
+      "start-date": "",
+      "totalCost": "$70,733",
+      "id": 2
+    },
+    {
+      "car-rental": "",
+      "accommodation": "hotel",
+      "features": [],
+      "adults": 1,
+      "children": 0,
+      "name": "",
+      "contact": "",
+      "start-date": "",
+      "totalCost": "$68,733",
+      "id": 3
+    },
+    {
+      "car-rental": "",
+      "accommodation": "hotel",
+      "features": [],
+      "adults": 1,
+      "children": 0,
+      "name": "",
+      "contact": "",
+      "start-date": "",
+      "totalCost": "$68,733",
+      "tripName": "Surprising jaunt in admirable United Arab Emirates",
+      "tripId": "5cc1d10107e2be6064ff9129",
+      "tripCode": "ARE",
+      "id": 4
+    },
+    {
+      "car-rental": "",
+      "accommodation": "hotel",
+      "features": [
+        "all-inclusive"
+      ],
+      "adults": 1,
+      "children": 0,
+      "name": "",
+      "contact": "",
+      "start-date": "",
+      "totalCost": "$51,581",
+      "tripName": "Pleasant travel in cool Turkey",
+      "tripId": "5cc1d10130dfa407e2e54e20",
+      "tripCode": "TUR",
+      "id": 5
     }
   ]
 }
